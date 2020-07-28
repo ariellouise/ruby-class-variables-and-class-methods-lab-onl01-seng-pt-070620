@@ -23,5 +23,5 @@ class Song
     @@artists 
   end
 
-  def initialize
+  def initialize(name, artist, genre)
 end
