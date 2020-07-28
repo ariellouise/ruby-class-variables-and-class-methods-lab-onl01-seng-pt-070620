@@ -23,4 +23,5 @@ class Song
     @@artists 
   end
 
+  def initialize
 end
