@@ -26,6 +26,8 @@ class Song
     unique_artists = []
     @@artists.each do |artist| 
       unique_artists.push(artist)
+    end 
+    
   end
 
   def initialize(name, artist, genre)
