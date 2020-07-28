@@ -19,7 +19,10 @@ class Song
   
   def self.genres
     unique_genres = []
-    @@genres 
+    @@genres.each do |genre| 
+      unique_genres.push(genre)
+    end 
+    return unique_genres
   end
   
   def self.artists 
@@ -27,7 +30,7 @@ class Song
     @@artists.each do |artist| 
       unique_artists.push(artist)
     end 
-    
+    return unique_artists
   end
 
   def initialize(name, artist, genre)
