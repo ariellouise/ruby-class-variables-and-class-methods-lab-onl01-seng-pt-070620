@@ -41,7 +41,16 @@ class Song
     @@artist_count
   end
   
-  
+  def self.genre_count
+    @@genres.collect do |genre|
+      if @@genre_count.include?(genre)
+        @@genre_count[genre] += 1
+      else
+        @@genre_count[genre] = 1
+      end
+    end
+    @@genre_count 
+  end 
 
   def initialize(name, artist, genre)
     @name = name 
