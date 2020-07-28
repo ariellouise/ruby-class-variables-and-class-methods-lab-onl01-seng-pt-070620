@@ -57,7 +57,7 @@ class Song
     @artist = artist 
     @genre = genre 
     @@count += 1 
-    @@genres << genre #add ALL genres to array
+    @@genres << genre 
     @@artists << artist #add ALL artists to array
   end 
 end
