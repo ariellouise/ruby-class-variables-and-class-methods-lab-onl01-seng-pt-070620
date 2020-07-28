@@ -24,7 +24,7 @@ class Song
   
   def self.artists 
     unique_artists = []
-    @@artists 
+    @@artists.each do |artist|
   end
 
   def initialize(name, artist, genre)
