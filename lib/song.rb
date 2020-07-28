@@ -30,6 +30,8 @@ class Song
     return unique_artists
   end
 
+  def self
+
   def initialize(name, artist, genre)
     @name = name 
     @artist = artist 
