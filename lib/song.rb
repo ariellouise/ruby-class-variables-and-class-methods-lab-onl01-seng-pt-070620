@@ -28,7 +28,7 @@ class Song
   def self.artists 
     unique_artists = []
     @@artists.each do |artist| 
-      unique_artists.push(artist)
+      unique_artists.push(artist) unless unique_artists.include?(artist)
     end 
     return unique_artists
   end
